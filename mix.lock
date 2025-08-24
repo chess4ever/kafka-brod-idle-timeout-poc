@@ -1,0 +1,8 @@
+%{
+  "brod": {:hex, :brod, "3.19.1", "6e42e0b495108f8c691717654c6efef7a02f69d1eaaf885bb8d0f7aa8c04b9c7", [:rebar3], [{:kafka_protocol, "4.1.5", [hex: :kafka_protocol, repo: "hexpm", optional: false]}, {:snappyer, "1.2.9", [hex: :snappyer, repo: "hexpm", optional: false]}], "hexpm", "241899cff62e175cd60de4acd4b72f40edb3529b18853f8b22a8a35e4c76d71d"},
+  "crc32cer": {:hex, :crc32cer, "0.1.8", "c6c2275c5fb60a95f4935d414f30b50ee9cfed494081c9b36ebb02edfc2f48db", [:rebar3], [], "hexpm", "251499085482920deb6c9b7aadabf9fb4c432f96add97ab42aee4501e5b6f591"},
+  "kaffe": {:hex, :kaffe, "1.27.2", "68944e6ac4a57543331c55a6d74265c087cd34c0e506f05929363d953fd5a5c2", [:mix], [{:brod, "~> 3.0", [hex: :brod, repo: "hexpm", optional: false]}, {:retry, ">= 0.15.0 and < 0.19.0", [hex: :retry, repo: "hexpm", optional: false]}], "hexpm", "35400e1a04e69c34898a07ace092c3bc94a356947ac2449f6dbb21e25daa1232"},
+  "kafka_protocol": {:hex, :kafka_protocol, "4.1.5", "d15e64994a8ca99716ab47db4132614359ac1bfa56d6c5b4341fdc1aa4041518", [:rebar3], [{:crc32cer, "0.1.8", [hex: :crc32cer, repo: "hexpm", optional: false]}], "hexpm", "c956c9357fef493b7072a35d0c3e2be02aa5186c804a412d29e62423bb15e5d9"},
+  "retry": {:hex, :retry, "0.18.0", "dc58ebe22c95aa00bc2459f9e0c5400e6005541cf8539925af0aa027dc860543", [:mix], [], "hexpm", "9483959cc7bf69c9e576d9dfb2b678b71c045d3e6f39ab7c9aa1489df4492d73"},
+  "snappyer": {:hex, :snappyer, "1.2.9", "9cc58470798648ce34c662ca0aa6daae31367667714c9a543384430a3586e5d3", [:rebar3], [], "hexpm", "18d00ca218ae613416e6eecafe1078db86342a66f86277bd45c95f05bf1c8b29"},
+}
