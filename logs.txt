@@ -1,0 +1,130 @@
+time=21:03:38.987 level=info [module=KafkaIdleTimeoutPoc.Application function=start/2 line=9 ] App starting…
+time=21:03:38.994 level=info [module=KafkaIdleTimeoutPoc.Runner function=init/1 line=16 ] POC starting | burst_size=50 idle_secs=300 repeats=1
+time=21:03:38.994 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=28 ] Burst #1 starting (50 messages)
+time=21:03:39.000 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-1
+time=21:03:40.510 level=info [module=brod_client function=connect/2 line=745 ] client :kaffe_producer_client connected to b20-pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+
+time=21:03:40.611 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-1
+time=21:03:40.611 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-2
+time=21:03:41.319 level=info [module=brod_client function=connect/2 line=745 ] client :kaffe_producer_client connected to b19-pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+
+time=21:03:41.407 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-2
+time=21:03:41.407 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-3
+time=21:03:41.491 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-3
+time=21:03:41.491 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-4
+time=21:03:41.577 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-4
+time=21:03:41.577 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-5
+time=21:03:41.664 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-5
+time=21:03:41.664 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-6
+time=21:03:41.756 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-6
+time=21:03:41.756 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-7
+time=21:03:41.843 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-7
+time=21:03:41.843 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-8
+time=21:03:41.928 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-8
+time=21:03:41.928 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-9
+time=21:03:42.013 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-9
+time=21:03:42.013 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-10
+time=21:03:42.099 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-10
+time=21:03:42.099 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-11
+time=21:03:42.255 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-11
+time=21:03:42.255 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-12
+time=21:03:42.344 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-12
+time=21:03:42.344 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-13
+time=21:03:42.429 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-13
+time=21:03:42.430 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-14
+time=21:03:42.513 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-14
+time=21:03:42.513 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-15
+time=21:03:42.597 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-15
+time=21:03:42.597 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-16
+time=21:03:42.686 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-16
+time=21:03:42.686 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-17
+time=21:03:42.796 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-17
+time=21:03:42.796 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-18
+time=21:03:42.886 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-18
+time=21:03:42.886 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-19
+time=21:03:42.972 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-19
+time=21:03:42.972 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-20
+time=21:03:43.056 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-20
+time=21:03:43.056 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-21
+time=21:03:43.141 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-21
+time=21:03:43.141 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-22
+time=21:03:43.233 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-22
+time=21:03:43.233 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-23
+time=21:03:43.319 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-23
+time=21:03:43.319 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-24
+time=21:03:43.406 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-24
+time=21:03:43.406 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-25
+time=21:03:43.493 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-25
+time=21:03:43.493 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-26
+time=21:03:43.578 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-26
+time=21:03:43.578 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-27
+time=21:03:43.663 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-27
+time=21:03:43.663 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-28
+time=21:03:43.747 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-28
+time=21:03:43.747 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-29
+time=21:03:43.832 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-29
+time=21:03:43.832 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-30
+time=21:03:43.917 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-30
+time=21:03:43.917 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-31
+time=21:03:44.002 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-31
+time=21:03:44.002 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-32
+time=21:03:44.086 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-32
+time=21:03:44.086 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-33
+time=21:03:44.172 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-33
+time=21:03:44.172 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-34
+time=21:03:44.257 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-34
+time=21:03:44.257 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-35
+time=21:03:44.344 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-35
+time=21:03:44.344 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-36
+time=21:03:44.428 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-36
+time=21:03:44.428 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-37
+time=21:03:44.512 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-37
+time=21:03:44.512 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-38
+time=21:03:44.597 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-38
+time=21:03:44.597 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-39
+time=21:03:44.681 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-39
+time=21:03:44.681 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-40
+time=21:03:44.775 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-40
+time=21:03:44.775 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-41
+time=21:03:44.859 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-41
+time=21:03:44.859 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-42
+time=21:03:44.948 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-42
+time=21:03:44.948 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-43
+time=21:03:45.031 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-43
+time=21:03:45.031 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-44
+time=21:03:45.115 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-44
+time=21:03:45.115 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-45
+time=21:03:45.198 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-45
+time=21:03:45.198 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-46
+time=21:03:45.284 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-46
+time=21:03:45.284 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-47
+time=21:03:45.373 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-47
+time=21:03:45.373 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-48
+time=21:03:45.457 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-48
+time=21:03:45.457 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-49
+time=21:03:45.542 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-49
+time=21:03:45.542 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=33 ] produce_sync -> key=round-1-msg-50
+time=21:03:45.627 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=37 ] produce_sync OK <- key=round-1-msg-50
+time=21:03:45.627 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=44 ] Burst #1 complete. Idling for 300s...
+time=21:08:45.627 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=50 ] Idle finished; probing ALL partitions…
+time=21:08:45.627 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=62 ] sending probe to partition=0 key=probe-p0-r1
+time=21:08:45.627 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=77 ] POC done. Press Ctrl+C to exit.
+time=21:13:41.328 level=info [module=brod_client function=handle_connection_down/3 line=781 ] client :kaffe_producer_client: payload connection down b19-pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+reason::request_timeout
+time=21:13:41.912 level=error [module=brod_client function=maybe_connect/3 line=731 ] :kaffe_producer_client (re)connect to b19-pkc-p11xm.us-east-1.aws.confluent.cloud:9092 aborted.
+last failure: :request_timeout
+time=21:13:41.912 level=warning [module=brod_producer function=maybe_reinit_connection/1 line=533 ] Failed to (re)init connection, reason:
+:request_timeout
+time=21:13:43.252 level=info [module=brod_client function=connect/2 line=745 ] client :kaffe_producer_client connected to b19-pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+
+time=21:13:43.350 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=70 ] probe partition=0 key=probe-p0-r1 result=:ok elapsed_ms=297721
+time=21:13:43.350 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=62 ] sending probe to partition=1 key=probe-p1-r1
+time=21:18:40.524 level=info [module=brod_client function=handle_connection_down/3 line=781 ] client :kaffe_producer_client: payload connection down b20-pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+reason::request_timeout
+time=21:18:41.108 level=error [module=brod_client function=maybe_connect/3 line=731 ] :kaffe_producer_client (re)connect to b20-pkc-p11xm.us-east-1.aws.confluent.cloud:9092 aborted.
+last failure: :request_timeout
+time=21:18:41.108 level=warning [module=brod_producer function=maybe_reinit_connection/1 line=533 ] Failed to (re)init connection, reason:
+:request_timeout
+time=21:18:42.287 level=info [module=brod_client function=connect/2 line=745 ] client :kaffe_producer_client connected to b20-pkc-p11xm.us-east-1.aws.confluent.cloud:9092
+
+time=21:18:42.375 level=info [module=KafkaIdleTimeoutPoc.Runner function=handle_info/2 line=70 ] probe partition=1 key=probe-p1-r1 result=:ok elapsed_ms=299025
