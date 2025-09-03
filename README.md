@@ -10,13 +10,17 @@ It simulates:
 3. Sending probe messages (one per partition, discovered automatically) to trigger potential
 :request_timeout and observe reconnection behavior.
 
+I have also committed an example [log](https://github.com/chess4ever/kafka-brod-idle-timeout-poc/blob/main/logs.txt) of one of my trials (stopped after the ack for partition 1).
+
 ## Getting Started
 
 ### Prerequisites
 
-- Erlang/OTP 26+ and Elixir 1.15+
+- Erlang/OTP 26+ and Elixir 1.15+ (There is a devcontainer setup to speed up things)
 - A Kafka cluster (tested with the basic free plan of Confluent Cloud)
 - A topic created in the cluster (tested with 2 partitions)
+
+Note: The POC with this setup has been tested also through a Github Codespace, in the hope to remove the "works on my machine" issue.
 
 ### Setup
 
