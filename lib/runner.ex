@@ -12,9 +12,10 @@ defmodule KafkaIdleTimeoutPoc.Runner do
     idle_secs = System.get_env("IDLE_SECS", @idle_secs_default) |> String.to_integer()
     repeats = System.get_env("REPEATS", "1") |> String.to_integer()
     topic = System.fetch_env!("CC_TOPIC")
+    enable_refresher = System.get_env("ENABLE_REFRESHER", "true")
 
     Logger.info(
-      "POC starting | burst_size=#{burst_size} idle_secs=#{idle_secs} repeats=#{repeats}"
+      "POC starting | burst_size=#{burst_size} idle_secs=#{idle_secs} repeats=#{repeats} enable_refresher=#{enable_refresher}"
     )
 
     send(self(), :do_burst)
