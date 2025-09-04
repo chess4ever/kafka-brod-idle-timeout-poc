@@ -27,3 +27,6 @@ kafka_idle_timeout_poc-*.tar
 
 # Env vars to export before running the app
 .env
+
+# vscode history
+.history
