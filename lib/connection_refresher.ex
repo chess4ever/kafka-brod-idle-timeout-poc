@@ -30,7 +30,6 @@ defmodule KafkaIdleTimeoutPoc.ConnectionRefresher do
   end
 
   defp refresh_connection(%{client_name: client_name, topic: topic}) do
-
     Logger.debug("Refreshing Kafka connection for #{topic}")
 
     case :brod_client.get_metadata_safe(client_name, topic) do

@@ -15,7 +15,11 @@ api_secret = System.get_env("CC_API_SECRET", "")
 
 kafka_client_auth =
   if api_key != "" and api_secret != "" do
-    [ssl: true, sasl: %{mechanism: :plain, login: api_key, password: api_secret}]
+    [
+      ssl: true,
+      # IMPORTANT: tuple, not map
+      sasl: {:plain, api_key, api_secret}
+    ]
   else
     []
   end
@@ -24,10 +28,20 @@ if System.get_env("BROD_DEBUG", "0") == "1" do
   config :logger, level: :debug
 end
 
+config :brod,
+  clients: [
+    kaffe_producer_client:
+      [
+        endpoints: [{host, port}],
+        extra_sock_opts: [keepalive: true, nodelay: true],
+        auto_start_producers: true
+      ] ++ kafka_client_auth
+  ]
+
 config :kaffe,
-  producer:
-    [
-      endpoints: [{host, port}],
-      topics: [topic],
-      partition_strategy: :md5
-    ] ++ kafka_client_auth
+  producer: [
+    client_name: :kaffe_producer_client,
+    endpoints: [{host, port}],
+    topics: [topic],
+    partition_strategy: :md5
+  ]
