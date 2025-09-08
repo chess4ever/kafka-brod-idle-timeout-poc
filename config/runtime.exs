@@ -28,28 +28,32 @@ if System.get_env("BROD_DEBUG", "0") == "1" do
   config :logger, level: :debug
 end
 
-# -------- Brod client with per-socket KA tuning (Linux) --------
-# IPPROTO_TCP = 6
-# TCP_KEEPIDLE = 4 (seconds before first probe)
-# TCP_KEEPINTVL = 5 (seconds between probes)
-# TCP_KEEPCNT = 6 (failed probes before close)
-# TCP_USER_TIMEOUT = 18 (ms to give up on unacked data)
-
 config :brod,
   clients: [
     kaffe_producer_client:
       [
         endpoints: [{host, port}],
         auto_start_producers: true,
+        request_timeout: 60_000,
+        default_producer_config: [
+          required_acks: -1,
+          max_retries: 30,
+          retry_backoff_ms: 1000,
+          ack_timeout: 10_000
+        ],
         extra_sock_opts: [
           {:keepalive, true},
           {:nodelay, true},
           # keepalive timers (unsigned 32-bit, native endian)
-          {:raw, 6, 4,  <<37::unsigned-native-32>>},   # TCP_KEEPIDLE = 37s
-          {:raw, 6, 5,  <<9::unsigned-native-32>>},    # TCP_KEEPINTVL = 9s
-          {:raw, 6, 6,  <<3::unsigned-native-32>>},    # TCP_KEEPCNT   = 3
+          # TCP_KEEPIDLE = 37s
+          {:raw, 6, 4, <<37::unsigned-native-32>>},
+          # TCP_KEEPINTVL = 9s
+          {:raw, 6, 5, <<9::unsigned-native-32>>},
+          # TCP_KEEPCNT   = 3
+          {:raw, 6, 6, <<3::unsigned-native-32>>},
           # optional but helpful against blackholes (in ms)
-          {:raw, 6, 18, <<20_000::unsigned-native-32>>}# TCP_USER_TIMEOUT = 20s
+          # TCP_USER_TIMEOUT = 20s
+          {:raw, 6, 18, <<20_000::unsigned-native-32>>}
         ]
       ] ++ kafka_client_auth
   ]
