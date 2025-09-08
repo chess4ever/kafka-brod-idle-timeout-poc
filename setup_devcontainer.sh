@@ -26,7 +26,7 @@ asdf plugin update --all
 
 # --- Pin exact versions (OTP 27!)
 ERLANG_VER="27.1.2"
-ELIXIR_VER="1.17.3-otp-27"
+ELIXIR_VER="1.17.3"
 
 # Write .tool-versions so `asdf install` is reproducible
 # (If you keep a .tool-versions in the repo, you can skip these echos.)

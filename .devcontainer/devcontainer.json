@@ -1,12 +1,10 @@
 {
-      "name": "Elixir Phoenix Dev",
-        "image": "mcr.microsoft.com/devcontainers/base:bullseye",
-          "postCreateCommand": "./setup_devcontainer.sh",
-            "customizations": {
-                "vscode": {
-                      "extensions": [
-                              "jakebecker.elixir-ls"
-                                    ]
-                                        }
-                                          }
-                                          }
+  "name": "Elixir Phoenix Dev",
+  "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+  "postCreateCommand": "./setup_devcontainer.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["jakebecker.elixir-ls"]
+    }
+  }
+}
