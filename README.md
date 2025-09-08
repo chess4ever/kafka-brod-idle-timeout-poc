@@ -8,7 +8,7 @@ It simulates:
 1. Sending a burst of messages.
 2. Going idle for a configurable time (to let TCP/LB idle timers expire).
 3. Sending probe messages (one per partition, discovered automatically) to trigger potential
-:request_timeout and observe reconnection behavior.
+   :request_timeout and observe reconnection behavior.
 
 I have also committed an example [log](https://github.com/chess4ever/kafka-brod-idle-timeout-poc/blob/main/logs.txt) of one of my trials (stopped after the ack for partition 1).
 
@@ -60,23 +60,16 @@ iex -S mix
 See `.env.example` for all available options:
 
 - CC_BOOTSTRAP_HOST – Kafka bootstrap server hostname (e.g. pkc-xxxxx.us-east-1.aws.confluent.cloud)
-
 - KAFKA_CLUSTER_PORT – Kafka bootstrap port (default 9092)
-
 - CC_API_KEY – Confluent Cloud API key
-
 - CC_API_SECRET – Confluent Cloud API secret
-
 - CC_TOPIC – Topic to produce into (must exist)
 
 POC behavior toggles:
 
 - BURST_SIZE – Number of messages in initial burst (default 50)
-
 - IDLE_SECS – Idle period before probes (default 420)
-
 - REPEATS – How many burst+idle+probe cycles (default 1)
-
 - ENABLE_REFRESHER – true/false, run a background metadata refresher (default true)
 
 Debugging:
@@ -86,17 +79,13 @@ Debugging:
 ## What to Expect
 
 - During the burst: you’ll see `produce_sync OK` logs for each message.
-
 - After the idle: you’ll see `SENDING probe …` lines for each discovered partition.
 
   - If connections went stale, you may see:
 
     1. `payload connection down … reason::request_timeout`
-
     2. `Failed to (re)init connection …`
-
     3. `client :kaffe_producer_client connected …`
-
   - When reconnected, probes return with `:ok` and `elapsed_ms` showing how long they were blocked.
 
 This mirrors the issue seen in production when Confluent Cloud idle timeouts silently drop sockets.
@@ -104,19 +93,14 @@ This mirrors the issue seen in production when Confluent Cloud idle timeouts sil
 ## Development Notes
 
 - Burst messages use:
-`Kaffe.Producer.produce_sync(topic, key, value)`(partition chosen by strategy).
-
+  `Kaffe.Producer.produce_sync(topic, key, value)`(partition chosen by strategy).
 - Probes use:
-`Kaffe.Producer.produce_sync(topic, partition, key, value)` (explicit partition).
-
+  `Kaffe.Producer.produce_sync(topic, partition, key, value)` (explicit partition).
 - Partitions are auto-discovered at runtime using `:brod_client.get_partitions_count/2`.
 
 ## Troubleshooting
 
 - `unknown_topic_or_partition` – make sure `CC_TOPIC` exists and your API key has write access.
-
 - `No probe logs` – check that your topic has partitions; the code auto-discovers them.
-
 - `Observer GUI missing` – install erlang-wx or use observer_cli for a TUI observer.
-
 - Note that this project comes with an opinionated .`iex.exs` defining a module `DevObserver` to make `:observer.start()` work easily after having installed all the OS required deps.
